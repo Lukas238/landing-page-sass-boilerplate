@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h2, h3 {
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h3 {
+	margin: 0;
+}
+
+hr {
+    background-color: $color-primary;
+    border: none;
+    height: 1px;
+    margin: 26px auto 40px;
+}

@@ -1,0 +1,14 @@
+// COLORS 
+$color-primary: #003768;
+$color-secondary: #ededed;
+$color-tertiary: #e8e8e8;
+$color-contrast: #ffffff;
+
+// MEDIA QUERIES
+$xs: ( max:  767px );
+$sm: ( min:  768px );
+$md: ( min:  992px );
+$lg: ( min: 1200px );
+$sm-only: ( min: map-get($sm, min), max: map-get($md, min) - 1 );
+$md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
+$xs-sm: ( max: map-get($md, min) - 1 );
