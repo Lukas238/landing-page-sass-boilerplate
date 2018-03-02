@@ -183,7 +183,7 @@ gulp.task('html', function () {
 //	ASSEMBLE TEMPALTES
 gulp.task('assemble', ['html'], function () {
     app.layouts('src/layouts/*.hbs');
-    app.pages('src/*.hbs');
+    app.pages('src/**/*.hbs');
     
     return app.toStream('pages')
         .pipe(app.renderFile())
